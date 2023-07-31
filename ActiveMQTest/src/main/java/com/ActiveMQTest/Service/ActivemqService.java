@@ -13,7 +13,7 @@ public class ActivemqService {
         this.jmsTemplate = jmsTemplate;
     }
 
-    public void SendMessage(String message){
-jmsTemplate.convertAndSend("A new Message", message);
+    public void SendMessage(String message) {
+        jmsTemplate.convertAndSend("A new Message", message);
     }
 }
